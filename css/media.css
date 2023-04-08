@@ -1,0 +1,329 @@
+@media screen and (max-width: 427px){
+    .modal{
+        width: 90vw;
+    }
+}
+
+@media screen and (min-width: 428px) {
+    .container {
+        width: 426px;
+    }
+
+    .footer {
+        width: 426px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mob-menu {
+        display: none;
+    }
+
+    .container {
+        max-width: none;
+        width: 766px;
+    }
+
+    .header {
+        padding-bottom: 10px;
+    }
+
+    .header-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .active-nav-link::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--hover-color);
+        border-radius: 2px;
+        top: 36px;
+    }
+
+    .contact-list {
+        display: block;
+    }
+
+    .contact-link {
+        font-family: var(--main-font);
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.04em;
+        color: var(--main-text-color);
+        transition: color var(--transition-parameters);
+    }
+
+    .mobile-menu-open {
+        display: none;
+    }
+
+    .main-title-section {
+        max-width: 766px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tablet.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .main-title-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tablet-2x.jpg);
+        }
+    }
+
+    .main-title {
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        margin: 0 auto 36px auto;
+    }
+
+
+    .principles {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .principles-list {
+        gap: 0;
+    }
+
+    .principles:nth-child(2n+1) {
+        margin-right: 24px;
+    }
+
+    .principles:nth-child(-n+2) {
+        margin-bottom: 72px;
+    }
+
+    .team-description>.container {
+        width: 582px;
+    }
+
+    .team-list {
+        gap: 0;
+    }
+
+    .team-member {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .team-member:nth-child(2n+1) {
+        margin-right: 24px;
+    }
+
+    .team-member:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 64px;
+    }
+
+    .customers-section .container {
+        width: 582px;
+    }
+
+
+    .customers-icons {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .customers-icons-list>.customers-icons {
+        margin: 0;
+    }
+
+    .customers-icons:not(:nth-child(3n)) {
+        margin-right: 16px;
+    }
+
+    .customers-icons:not(:nth-last-child(-n + 3)) {
+        margin-bottom: 72px;
+    }
+
+    .footer {        
+        width: 100%;
+    }
+
+    .footer-form {        
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;        
+        max-width: none;
+        width: 766px;
+        padding-left: 108px;
+    }
+
+    .footer-form-container {
+        margin-top: 72px;
+        width: 453px;
+    }
+
+
+    .footer-descr {
+        margin: 0;
+    }
+
+    .footer-social-media {
+        text-align: left;
+    }
+
+    .footer .logo-link {
+        text-align: left;
+    }
+
+    .footer-email {
+        margin-bottom: 0;
+        width: 264px;
+    }
+
+    .footer-social {
+        max-width: none;
+        min-width: 208px;
+        margin: 0 0 0 24px;
+        /*margin-left: 120px;
+        margin-right: 80px;*/
+    }
+
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+    }
+
+    .header {
+        padding-bottom: 28px;
+    }
+
+    .active-nav-link::after {
+        top: 47px;
+    }
+
+    .contact-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .contact-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+    .main-title-section {
+
+        max-width: 1440px;
+        background-color: var(--main-titles-color);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        padding-bottom: 188px;
+        padding-top: 188px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .main-title-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
+        }
+    }
+
+    .main-title {
+        margin: 0 auto 48px auto;
+    }
+
+    .principles {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .principle-description {
+        font-weight: 400;
+    }
+
+    .principle-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .principle-icon-container {
+        display: flex;
+        height: 112px;
+        background-color: var(--lightest-grey);
+        margin-bottom: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .principles-list {
+        gap: 24px;
+    }
+
+    .principles-list .principles {
+        margin: 0;
+    }
+
+    .principle-title {
+        text-align: left;
+    }
+
+    .type-of-work {
+        display: block;
+        padding-bottom: 120px;
+    }
+
+    .team-description>.container {
+        width: 1158px;
+    }
+
+    .team-list>.team-member {
+        margin: 0;
+    }
+
+    .team-list {
+        gap: 24px;
+    }
+
+    .team-member {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .customers-section .container {
+        width: 1158px;
+    }
+
+    .customers-icons-list>.customers-icons {
+        margin: 0;
+    }
+
+    .customers-icons-list {
+        flex-wrap: no-wrap;
+        gap: 24px;
+    }
+
+    .customers-icons {
+        width: calc((100% - 120px) / 6);
+    }
+
+    .footer {        
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-form-container {
+        margin: 0;
+    }
+
+    .footer-container {
+        padding-left: 15px;        
+    }
+
+    .footer-social {
+        margin-left: 120px;
+        margin-right: 80px;
+    }
+
+}
