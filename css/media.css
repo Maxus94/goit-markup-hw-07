@@ -1,5 +1,5 @@
-@media screen and (max-width: 427px){
-    .modal{
+@media screen and (max-width: 427px) {
+    .modal {
         width: 90vw;
     }
 }
@@ -9,9 +9,13 @@
         width: 426px;
     }
 
-    .footer {
-        width: 426px;
+    .mob-soc-list {
+        gap: 56px;
     }
+
+    /*.footer {
+        width: 426px;
+    }*/
 }
 
 @media screen and (min-width: 768px) {
@@ -25,7 +29,8 @@
     }
 
     .header {
-        padding-bottom: 10px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
     .header-list {
@@ -41,21 +46,28 @@
         height: 4px;
         background-color: var(--hover-color);
         border-radius: 2px;
-        top: 36px;
+        top: 43px;
     }
 
     .contact-list {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
     }
 
     .contact-link {
+        display: block;
         font-family: var(--main-font);
         font-size: 12px;
-        line-height: 1.33;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: var(--main-text-color);
         transition: color var(--transition-parameters);
     }
+
+    /*.contact-link:first-child{
+        margin-bottom: 12px;
+    }*/
 
     .mobile-menu-open {
         display: none;
@@ -77,8 +89,8 @@
     .main-title {
         font-size: 56px;
         line-height: 1.07;
-        letter-spacing: 0.02em;
         margin: 0 auto 36px auto;
+        max-width: 496px;
     }
 
 
@@ -86,17 +98,21 @@
         width: calc((100% - 24px) / 2);
     }
 
-    .principles-list {
-        gap: 0;
+    .principle-title {
+        text-align: left;
     }
 
-    .principles:nth-child(2n+1) {
+    .principles-list {
+        gap: 72px 24px;
+    }
+
+    /*.principles:nth-child(2n+1) {
         margin-right: 24px;
     }
 
     .principles:nth-child(-n+2) {
         margin-bottom: 72px;
-    }
+    }*/
 
     .team-description>.container {
         width: 582px;
@@ -122,6 +138,9 @@
         width: 582px;
     }
 
+    .customers-icons-list {
+        gap: 72px 24px;
+    }
 
     .customers-icons {
         width: calc((100% - 48px) / 3);
@@ -131,19 +150,19 @@
         margin: 0;
     }
 
-    .customers-icons:not(:nth-child(3n)) {
+    /*    .customers-icons:not(:nth-child(3n)) {
         margin-right: 16px;
     }
 
     .customers-icons:not(:nth-last-child(-n + 3)) {
         margin-bottom: 72px;
-    }
+    }*/
 
-    .footer {        
+    .footer {
         width: 100%;
     }
 
-    .footer-form {        
+    .footer-form {
         display: flex;
         align-items: center;
         gap: 24px;
@@ -151,10 +170,10 @@
 
     .footer-container {
         display: flex;
-        flex-wrap: wrap;        
+        flex-wrap: wrap;
         max-width: none;
-        width: 766px;
-        padding-left: 108px;
+        width: 582px;
+        /*padding-left: 108px;*/
     }
 
     .footer-form-container {
@@ -196,15 +215,17 @@
     }
 
     .header {
-        padding-bottom: 28px;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
-    .active-nav-link::after {
-        top: 47px;
-    }
+    /*.active-nav-link::after {
+        top: 43px;
+    }*/
 
     .contact-list {
         display: flex;
+        flex-direction: row;
         gap: 40px;
     }
 
@@ -233,6 +254,11 @@
 
     .main-title {
         margin: 0 auto 48px auto;
+    }
+
+    .principles-section {
+        padding-bottom: 120px;
+        padding-top: 120px;
     }
 
     .principles {
@@ -275,6 +301,11 @@
         padding-bottom: 120px;
     }
 
+    .team-description {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
     .team-description>.container {
         width: 1158px;
     }
@@ -289,6 +320,11 @@
 
     .team-member {
         width: calc((100% - 72px) / 4);
+    }
+
+    .customers-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     .customers-section .container {
@@ -308,7 +344,7 @@
         width: calc((100% - 120px) / 6);
     }
 
-    .footer {        
+    .footer {
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -318,7 +354,7 @@
     }
 
     .footer-container {
-        padding-left: 15px;        
+        padding-left: 15px;
     }
 
     .footer-social {

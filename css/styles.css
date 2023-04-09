@@ -255,7 +255,7 @@ body {
 
 .mob-soc-list {
     display: flex;
-    justify-content: space-between;
+    gap: 24px;
 }
 
 .mob-soc-item{
@@ -416,9 +416,7 @@ body {
 /*section Principles*/
 .principles-section {
     padding-top: 96px;
-    padding-bottom: 96px;
-    /*padding-bottom: 120px;
-    padding-top: 120px;*/
+    padding-bottom: 96px;    
 }
 
 .principles-list {
@@ -495,10 +493,12 @@ body {
 
 
 
-section Our team .team-description {
+/*section Our team*/ 
+
+.team-description {
     background-color: var(--lightest-grey);
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .team-description>.container {
@@ -591,7 +591,7 @@ section Our team .team-description {
 .customers-icons-list {
     display: flex;
     flex-wrap: wrap;
-    /*gap: 24px;*/
+    gap: 72px 16px;
 }
 
 .customers-icons {
@@ -599,13 +599,13 @@ section Our team .team-description {
     width: calc((100% - 16px) / 2);
 }
 
-.customers-icons:nth-child(2n+1) {
+/*.customers-icons:nth-child(2n+1) {
     margin-right: 16px;
 }
 
 .customers-icons:nth-child(-n+4) {
     margin-bottom: 72px;
-}
+}*/
 
 .customers-link {
     width: 100%;
