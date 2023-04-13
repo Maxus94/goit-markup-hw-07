@@ -1,3 +1,9 @@
+@media screen and (max-width: 295px) {
+    .footer-descr {
+        width: inherit;
+    }
+}
+
 @media screen and (max-width: 427px) {
     .modal {
         width: 90vw;
@@ -12,11 +18,32 @@
     .mob-soc-list {
         gap: 56px;
     }
-
-    /*.footer {
-        width: 426px;
-    }*/
 }
+
+@media screen and (max-width: 767px) {
+
+    .portfolio-section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .portfolio-buttons-list {
+        flex-wrap: wrap;
+        justify-content: left;
+        gap: 16px 24px;
+        margin-bottom: 48px;
+    }
+
+    .property-button {
+        height: 40px;
+        padding: 8px 16px;
+    }
+
+    .portfolio-image {
+        width: 100%;
+    }
+}
+
 
 @media screen and (min-width: 768px) {
     .mob-menu {
@@ -65,10 +92,6 @@
         transition: color var(--transition-parameters);
     }
 
-    /*.contact-link:first-child{
-        margin-bottom: 12px;
-    }*/
-
     .mobile-menu-open {
         display: none;
     }
@@ -93,7 +116,6 @@
         max-width: 496px;
     }
 
-
     .principles {
         width: calc((100% - 24px) / 2);
     }
@@ -105,15 +127,7 @@
     .principles-list {
         gap: 72px 24px;
     }
-
-    /*.principles:nth-child(2n+1) {
-        margin-right: 24px;
-    }
-
-    .principles:nth-child(-n+2) {
-        margin-bottom: 72px;
-    }*/
-
+    
     .team-description>.container {
         width: 582px;
     }
@@ -150,14 +164,6 @@
         margin: 0;
     }
 
-    /*    .customers-icons:not(:nth-child(3n)) {
-        margin-right: 16px;
-    }
-
-    .customers-icons:not(:nth-last-child(-n + 3)) {
-        margin-bottom: 72px;
-    }*/
-
     .footer {
         width: 100%;
     }
@@ -181,7 +187,6 @@
         width: 453px;
     }
 
-
     .footer-descr {
         margin: 0;
     }
@@ -202,11 +207,25 @@
     .footer-social {
         max-width: none;
         min-width: 208px;
-        margin: 0 0 0 24px;
-        /*margin-left: 120px;
-        margin-right: 80px;*/
+        margin: 0 0 0 24px;        
     }
 
+    .portfolio-section {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
+    .portfolio-buttons-list {
+        margin-bottom: 64px;
+    }
+
+    .portfolio-exhamples-list {
+        column-gap: 24px;
+    }
+
+    .portfolio-item {
+        width: calc((100% - 24px) / 2);
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -218,10 +237,6 @@
         padding-top: 24px;
         padding-bottom: 24px;
     }
-
-    /*.active-nav-link::after {
-        top: 43px;
-    }*/
 
     .contact-list {
         display: flex;
@@ -360,6 +375,23 @@
     .footer-social {
         margin-left: 120px;
         margin-right: 80px;
+    }
+
+    .portfolio-section {
+        padding-top: 96px;
+        padding-bottom: 120px;
+    }
+
+    .portfolio-buttons-list {
+        margin-bottom: 72px;
+    }
+
+    .portfolio-item {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .portfolio-exhamples-list {
+        row-gap: 72px;
     }
 
 }
